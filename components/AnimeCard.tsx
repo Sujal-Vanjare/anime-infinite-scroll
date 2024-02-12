@@ -44,7 +44,7 @@ export default function AnimeCard({ anime, index }: Prop) {
           // width={225}
           // height={314}
           fill
-          className="rounded-xl "
+          className="rounded-xl  bg-stone-800 "
         />
       </div>
       <div className="py-4 flex flex-col gap-3 ">
