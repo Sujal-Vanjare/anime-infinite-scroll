@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="sm:px-16 py-4 px-8 flex justify-between items-center gap-2 flex-wrap bg-[#161921]">
+    <footer className="sm:px-16 py-4 px-8 flex justify-between items-center gap-2 flex-wrap ">
       <p className="text-base font-bold text-white">@2023 EpicAnimeVault</p>
       <Image
         src="/logo.png"
