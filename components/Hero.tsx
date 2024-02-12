@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <header className="bg-[url('/mobHero.webp')] sm:bg-[url('/hero.webp')]  bg-center bg-cover bg-no-repeat w-full h-[800px]  sm:h-[600px] sm:p-20 p-10 flex flex-col justify-between">
+    <header className="min-[1500px]:mt-6 min-[1500px]:rounded-xl bg-[url('/mobHero.webp')] sm:bg-[url('/hero.webp')]  bg-center bg-cover bg-no-repeat w-full h-[800px]  sm:h-[600px] sm:p-20 p-10 flex flex-col justify-between">
       <Image
         src="/logo.png"
         alt="logo"

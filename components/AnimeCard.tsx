@@ -41,6 +41,8 @@ export default function AnimeCard({ anime, index }: Prop) {
         <Image
           src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}
+          // width={225}
+          // height={314}
           fill
           className="rounded-xl "
         />
@@ -75,7 +77,7 @@ export default function AnimeCard({ anime, index }: Prop) {
               alt="star"
               width={18}
               height={18}
-              className="object-contain"
+              className="object-contain bg"
             />
             <p className="text-base font-bold text-[#FFAD49]">{anime.score}</p>
           </div>
