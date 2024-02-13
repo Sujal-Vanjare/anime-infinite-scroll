@@ -21,8 +21,8 @@ Explore the Diverse Realms of Anime Magic! Discover thousands of anime titles, e
 
 Feel free to explore the website.
 
-![Anime Discovery](/deskImg.webp)
+![Anime Discovery](public/deskImg.webp)
 
-![Anime Discovery](/tabImg.webp)
+![Anime Discovery](public/tabImg.webp)
 
-![Anime Discovery](/phoneImg.webp)
+![Anime Discovery](public/phoneImg.webp)
