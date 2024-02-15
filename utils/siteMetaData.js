@@ -6,7 +6,7 @@ const siteMetadata = {
     "Explore the Diverse Realms of Anime Magic! Discover thousands of anime titles, each accompanied by its name, poster, and rating.",
   language: "en-us",
   siteUrl: "https://animediscovery.vercel.app", // your website URL
-  siteLogo: "/favicon.ico",
+  siteLogo: "/android-chrome-192x192.png",
   socialBanner: "/website_poster.webp", // add social banner in the public folder
   email: "sujalvanjaredev@gmail.com",
   github: "https://github.com/Sujal-Vanjare",
