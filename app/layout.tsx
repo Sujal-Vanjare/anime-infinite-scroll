@@ -51,6 +51,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta
+        name="google-site-verification"
+        content="k3Mu_NRmonR916_W69sQXbvwCkKEQ8VczZ8IAWJpmBc"
+      />
       <body className={dmSans.className}>
         <main className="max-w-[1500px] mx-auto bg-black">
           <Hero />
