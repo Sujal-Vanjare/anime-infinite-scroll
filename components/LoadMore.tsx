@@ -1,7 +1,6 @@
 "use client";
 
 import { fetchAnime } from "@/app/action";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import AnimeCard from "./AnimeCard";
@@ -32,12 +31,10 @@ export default function LoadMore() {
 
       <section className="flex justify-center items-center w-full">
         <div ref={ref}>
-          <Image
+          <img
             src="./spinner.svg"
             alt="spinner"
-            width={56}
-            height={56}
-            className="object-contain"
+            className="object-contain w-14 h-14"
           />
         </div>
       </section>

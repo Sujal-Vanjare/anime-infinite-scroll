@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { MotionDiv } from "./MotionDiv";
 
 export interface AnimeProp {
@@ -37,14 +36,11 @@ export default function AnimeCard({ anime, index }: Prop) {
       viewport={{ amount: 0 }}
       className="max-w-sm rounded relative w-full"
     >
-      <div className="relative w-full aspect-[2/3] ">
-        <Image
+      <div className="relative w-full aspect-[2/3]">
+        <img
           src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}
-          // width={225}
-          // height={314}
-          fill
-          className="rounded-xl  bg-stone-800 "
+          className="absolute inset-0 rounded-xl  object-cover w-full h-full  bg-stone-800"
         />
       </div>
       <div className="py-4 flex flex-col gap-3 ">
@@ -60,24 +56,20 @@ export default function AnimeCard({ anime, index }: Prop) {
         </div>
         <div className="flex gap-4 items-center">
           <div className="flex flex-row gap-2 items-center">
-            <Image
+            <img
               src="./episodes.svg"
               alt="episodes"
-              width={20}
-              height={20}
-              className="object-contain"
+              className="object-contain h-5 w-5"
             />
             <p className="text-base text-white font-bold">
               {anime.episodes || anime.episodes_aired}
             </p>
           </div>
           <div className="flex flex-row gap-2 items-center">
-            <Image
+            <img
               src="./star.svg"
               alt="star"
-              width={18}
-              height={18}
-              className="object-contain bg"
+              className="object-contain bg h-[18px] w-[18px}"
             />
             <p className="text-base font-bold text-[#FFAD49]">{anime.score}</p>
           </div>
