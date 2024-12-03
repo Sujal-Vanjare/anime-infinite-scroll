@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/manifest.js"
+    "app/manifest.ts"
   ],
   "exclude": ["node_modules"]
 }
