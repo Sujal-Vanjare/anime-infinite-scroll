@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MotionDiv } from "./MotionDiv";
 
 export interface AnimeProp {
@@ -37,7 +38,9 @@ export default function AnimeCard({ anime, index }: Prop) {
       className="max-w-sm rounded relative w-full"
     >
       <div className="relative w-full aspect-[2/3]">
-        <img
+        <Image
+          unoptimized
+          fill
           src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}
           className="absolute inset-0 rounded-xl  object-cover w-full h-full  bg-stone-800"
@@ -56,7 +59,10 @@ export default function AnimeCard({ anime, index }: Prop) {
         </div>
         <div className="flex gap-4 items-center">
           <div className="flex flex-row gap-2 items-center">
-            <img
+            <Image
+              unoptimized
+              width={20}
+              height={20}
               src="./episodes.svg"
               alt="episodes"
               className="object-contain h-5 w-5"
@@ -66,7 +72,10 @@ export default function AnimeCard({ anime, index }: Prop) {
             </p>
           </div>
           <div className="flex flex-row gap-2 items-center">
-            <img
+            <Image
+              unoptimized
+              width={18}
+              height={18}
               src="./star.svg"
               alt="star"
               className="object-contain bg h-[18px] w-[18px}"
