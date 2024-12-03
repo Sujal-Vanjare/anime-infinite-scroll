@@ -1,36 +1,37 @@
 import type { Metadata } from "next";
-import siteMetadata from "@/utils/siteMetaData";
 import { DM_Sans } from "next/font/google";
-
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
-
 import "./globals.css";
+import { siteConfig } from "@/config/site";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteMetadata.siteUrl),
-  title: siteMetadata.title,
-  description: siteMetadata.description,
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    template: `%s | ${siteConfig.shortName}`,
+    default: siteConfig.name,
+  },
+  description: siteConfig.description,
 
   openGraph: {
-    title: siteMetadata.title,
-    description: siteMetadata.description,
-    url: siteMetadata.siteUrl,
-    siteName: siteMetadata.title,
-    images: [siteMetadata.socialBanner],
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.shortName,
+    images: [siteConfig.ogImage],
     locale: "en_US",
     type: "website",
   },
   robots: {
     index: true,
     follow: true,
-    // nocache: true,
+    nocache: false, // Allow caching for better performance
     googleBot: {
       index: true,
-      follow: false,
-      noimageindex: true,
+      follow: true, // Allow Googlebot to follow links
+      noimageindex: false, // Allow Google to index images
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
@@ -38,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: siteMetadata.title,
-    description: siteMetadata.description,
-    images: [siteMetadata.socialBanner],
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
   },
 };
 
